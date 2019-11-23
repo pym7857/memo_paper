@@ -1,0 +1,79 @@
+body{
+    overflow: hidden;
+    color : white; /* 전체 font 색깔 */
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* placeholder 글자색 변경 */
+input::placeholder {color:white; text-decoration: underline;}
+input::-webkit-input-placeholder {color:white;}
+input:-ms-input-placeholder {color:white;}
+
+.js-clock{
+    font-size:500%;
+}
+
+/* toDOList 정렬 */
+.js-toDoList{
+    list-style:none;
+    text-align:left;
+}
+.toDoDiv {
+    display: inline-block;
+    right: 300px;
+}
+
+/* 날씨 오른쪽 상단 정렬 */
+.js-weather{
+    position:absolute;
+    top:30px;
+    right:20px;
+    font-size:120%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* delete이모지 버튼 배경 없애기 */
+.toDo__button {
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border:0 solid black;
+}
+
+
+h1{
+    color: white;
+}
+
+.form,
+.greetings {
+    display: none;
+    font-size:300%;
+    margin-top:0;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1; /* bgImage 맨 뒤로*/
+    animation: fadeIn 0.5s linear;
+}
