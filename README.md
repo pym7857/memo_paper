@@ -5,7 +5,7 @@ memo_paper by Vanilla JS
 ![4](./images/intro.JPG)
 
 ## updated
-- wrtie name 
+- write name 
 - clock
 - weather (weather API)
 - to do list
